@@ -45,7 +45,7 @@ $Files = Get-ChildItem $Target -Include $Extension -Recurse | Where {$_.LastWrit
 
 ##### Log Cleanup #####
 
-Get-ChildItem C:\Scripts\LogCleanup\LogDelete* | Rename-Item -NewName "$(get-date -f yyyy-MM-dd).log"
+Get-ChildItem D:\Scripts\LogCleanup\LogDelete* | Rename-Item -NewName "$(get-date -f yyyy-MM-dd).log"
 
 $Now = Get-Date
 $Days = "30"
